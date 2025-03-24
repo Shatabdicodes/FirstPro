@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Engine</title>
@@ -16,7 +18,7 @@
         </ul>
         <a href="" id="sg">Sign in</a>
     </nav>
-    <div class="logo">
+    <div  data-aos="fade-up" class="logo">
        <span class="blue">G</span>
        <span class="red">o</span>
        <span class="yellow">o</span>
@@ -25,7 +27,7 @@
        <span class="red">e</span>
     </div>
     
-    <div class="search-box">
+    <div data-aos="flip-left" class="search-box">
         <i class="fa fa-magnifying-glass"></i>
         <input type="text" placeholder="Search Google or type a URL">
         <button type="submit"></button>
@@ -40,3 +42,9 @@
 
 </body>
 </html>
+<script>
+    AOS.init({
+        duration:1000,
+        once:false
+    })
+</script>
